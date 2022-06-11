@@ -1,0 +1,202 @@
+/* основной шрифт Roboto – 400,500,700,900 */
+/* дополнительный шрифт Raleway – 700 */
+/* основной цвет фона #ffffff */
+/* основной цвет для текста #757575 */
+/* дополнительный цвет текста #212121 */
+/* дополнительный цвет #2196F3 */
+:root {
+    --main-background-color: #ffffff;
+    --main-color-text: #757575;
+    --complementary-color-text: #212121;
+    --complementary-color: #2196F3;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+    background-color: var(--main-background-color);
+    color: var(--main-color-text);
+}
+h1 {  
+    color: #ffffff;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: var(--complementary-color-text);
+}
+
+/* header шапка */
+
+.logo-header,
+.logo-footer {
+    font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+}
+.logo-header { 
+    color: #000000;
+    text-decoration: none;
+}
+.logo-footer {  
+color: #ffffff;
+text-decoration: none;
+}
+.logo-web {
+    color: var(--complementary-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link-nav {
+    font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+    color: var(--complementary-color-text);
+}
+
+.link-nav:hover,
+.link-nav:focus {
+color: var(--complementary-color);
+}
+
+.studio {
+    color: var(--complementary-color);
+}
+.portfolio {
+    color: var(--complementary-color);
+}
+
+.link-header {
+    font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--main-color-text);
+}
+.link-header:hover,
+.link-header:focus {
+color: var(--complementary-color);
+}
+
+
+/* main */
+/* герой hero */
+.hero {
+    background-color: #2F303A;
+}
+.main-title {
+    font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase
+}
+.btn {
+    font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+    background-color: var(--complementary-color);
+    color: #ffffff;
+}
+/* benefits преимущества */
+.benefits {
+
+}
+.title-benefits {
+    font-weight: 700;
+    font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+}
+
+/*  деятельность activity */
+.title-activity,
+.title-team {
+font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em
+}
+
+/* команда team */
+.team {
+    background-color: #F5F4FA;
+}
+
+.title-name {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+.text-team {
+font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+/* main portfolio */
+.btn-portfolio {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+    cursor: pointer;
+   background-color: #F5F4FA; 
+   color: var(--complementary-color-text);
+}
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+    background-color: var(--complementary-color);
+    color: #ffffff;
+}
+.main-portfolio .title {
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+}
+.main-portfolio .text {
+    font-size: 16px;
+line-height: 1.87;
+}
+ /* footer подвал */
+.footer {
+background-color: #2F303A;
+}
+
+.text-footer {
+    font-style: normal;
+    line-height: 1.71;
+color: #ffffff;
+} 
+
+.link-footer {
+    font-style: normal;
+    line-height: 1.71;
+    text-decoration: none;
+color: rgba(255, 255, 255, 0.6);
+}
+.link-footer:hover,
+.link-footer:focus {
+color: var(--complementary-color);
+}
