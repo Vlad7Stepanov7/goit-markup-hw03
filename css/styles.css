@@ -39,7 +39,6 @@ h6 {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    background-color: green;
 }
 
 .list {
@@ -56,12 +55,17 @@ p {
     display: block;
 }
 /* header шапка */
+.header {
 
+}
+.header-portfolio {
+margin-bottom: 94px;
+}
 .container-header {
     min-height: 80px;
     display: flex;
     align-items: center;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .nav {
@@ -181,8 +185,6 @@ color: var(--complementary-color);
 }
 .list-benefits {
     display: flex;
-    background-color: red;
-
 }
 .list-benefits > .items {
     margin-left: 30px;
@@ -270,7 +272,22 @@ font-size: 16px;
 }
 
 /* main portfolio */
+.main-portfolio {
+margin-bottom: 94px;
+}
+
+.list-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.list-button > .items:nth-child(n+2) {
+margin-left: 9px;
+}
 .btn-portfolio {
+    padding: 6px 0;
+    border-radius: 4px;
+    border: 1px solid transparent;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
         font-size: 16px;
@@ -285,13 +302,43 @@ font-size: 16px;
     background-color: var(--complementary-color);
     color: #ffffff;
 }
-.main-portfolio .title {
+.btn-all {
+min-width: 73px;
+}
+.btn-website {
+min-width: 128px;
+}
+.btn-applications {
+min-width: 145px;
+}
+.btn-design {
+min-width: 103px;
+}
+.btn-marketing {
+min-width: 130px;
+}
+.list-works {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.list-works .items {
+    margin: 15px;
+}
+
+.img-portfolio {
+margin-bottom: 20px;
+}
+
+.list-works .title {
+    margin-bottom: 4px;
     font-weight: 700;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
 }
-.main-portfolio .text {
+.list-works .text {
+    padding-bottom: 20px;
     font-size: 16px;
 line-height: 1.87;
 }
