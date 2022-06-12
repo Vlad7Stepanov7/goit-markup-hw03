@@ -52,11 +52,16 @@ p {
     margin: 0;
     padding: 0;
 }
+.img {
+    display: block;
+}
 /* header шапка */
+
 .container-header {
     min-height: 80px;
     display: flex;
     align-items: center;
+    border: 1px solid #ECECEC;
 }
 
 .nav {
@@ -75,7 +80,10 @@ p {
     color: #000000;
     text-decoration: none;
 }
-.logo-footer {  
+.logo-footer { 
+    display: inline-block;
+    padding-top: 94px;
+    margin-bottom: 20px; 
 color: #ffffff;
 text-decoration: none;
 }
@@ -134,10 +142,12 @@ color: var(--complementary-color);
 /* main */
 /* герой hero */
 .hero {
+    margin-bottom: 94px;
     background-color: #2F303A;
 }
 
 .main-title {
+    margin-bottom: 30px;
     font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -167,9 +177,22 @@ color: var(--complementary-color);
 }
 /* benefits преимущества */
 .benefits {
+    margin-bottom: 94px;
+}
+.list-benefits {
+    display: flex;
+    background-color: red;
 
 }
+.list-benefits > .items {
+    margin-left: 30px;
+}
+.list-benefits > .items:first-child {
+    margin-left: 0;
+}
+
 .title-benefits {
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
         line-height: 1.14;
@@ -178,6 +201,10 @@ color: var(--complementary-color);
 }
 
 /*  деятельность activity */
+.activity {
+margin-bottom: 94px;
+}
+
 .title-activity,
 .title-team {
 font-weight: 700;
@@ -186,25 +213,62 @@ font-weight: 700;
     text-align: center;
     letter-spacing: 0.03em
 }
+.title-activity {
+    margin-bottom: 50px;
+}
 
+.list-activity {
+display: flex;
+}
+.list-activity > .items {
+    margin-left: 30px;
+}
+.list-activity>.items:first-child {
+    margin-left: 0;
+}
 /* команда team */
 .team {
     background-color: #F5F4FA;
 }
 
+.title-team {
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
+
+.list-team {
+display: flex;
+padding-bottom: 94px;
+}
+.list-team >.items {
+    margin-left: 30px;
+}
+.list-team >.items:first-child {
+    margin-left: 0;
+}
+
+.img-team {
+margin-bottom: 30px;
+}
+
 .title-name {
+    margin-bottom: 10px;
+    
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;
-        text-align: center;
-        letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .text-team {
+    padding-bottom: 25px;
+
 font-size: 16px;
     line-height: 1.18;
     text-align: center;
 }
+
 /* main portfolio */
 .btn-portfolio {
     font-family: 'Roboto', sans-serif;
@@ -233,20 +297,29 @@ line-height: 1.87;
 }
  /* footer подвал */
 .footer {
+    
 background-color: #2F303A;
 }
-
+.address {
+   padding-bottom: 60px;
+}
 .text-footer {
+    margin-bottom: 9px;
     font-style: normal;
     line-height: 1.71;
 color: #ffffff;
 } 
 
 .link-footer {
+    margin-bottom: 9px;
+    display: inline-block;
     font-style: normal;
     line-height: 1.71;
     text-decoration: none;
 color: rgba(255, 255, 255, 0.6);
+}
+.link-footer:last-child {
+    margin-bottom: 0;
 }
 .link-footer:hover,
 .link-footer:focus {
